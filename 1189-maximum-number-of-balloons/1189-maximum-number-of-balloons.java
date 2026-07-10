@@ -18,9 +18,9 @@ class Solution {
             map2.put(text.charAt(i), map2.getOrDefault(text.charAt(i), 0) +1);
         }
 
-        for(int i = 0; i < s.length(); i++){
-            int need_freq = map1.get(s.charAt(i));
-            int have_freq = map2.getOrDefault(s.charAt(i), 0);
+        for(char key : map1.keySet()){
+            int need_freq = map1.get(key);
+            int have_freq = map2.getOrDefault(key, 0);
 
             int output = have_freq / need_freq;
 
