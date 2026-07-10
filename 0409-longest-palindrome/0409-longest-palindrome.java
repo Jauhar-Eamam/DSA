@@ -21,10 +21,7 @@ class Solution {
             if(freq%2 == 0){
                 maxPalindrom += freq;
             }else {
-                // maxOddFreq = Math.max(maxOddFreq, freq);
-
                 maxPalindrom += freq-1;
-
                 isOdd = true;
             }
         }
