@@ -1,37 +1,37 @@
 class Solution {
     public int hIndex(int[] citations) {
 
-        int min = 1;
-        int max = citations[citations.length - 1];
+        int minCitations = 1;
+        int maxCitations = citations[citations.length - 1];
 
-        int mid = (min + max) / 2;
+        int midCitations = (minCitations + maxCitations) / 2;
 
-        int result = 0;
+        int resultOfHIndex = 0;
 
-        while (min <= max) {
-            if (isHIndex(citations, mid)) {
+        while (minCitations <= maxCitations) {
+            if (isHIndex(citations, midCitations)) {
 
-                min = mid + 1;
-                result = Math.max(result, mid);
+                minCitations = midCitations + 1;
+                resultOfHIndex = Math.max(resultOfHIndex, midCitations);
             } else {
-                max = mid - 1;
+                maxCitations = midCitations - 1;
             }
 
-            mid = (min + max) / 2;
+            midCitations = (minCitations + maxCitations) / 2;
 
         }
 
-        return result;
+        return resultOfHIndex;
 
     }
 
-    public boolean isHIndex(int[] citations, int mid) {
+    public boolean isHIndex(int[] citations, int midCitations) {
 
-        int length = citations.length;
+        int lengthOfCitations = citations.length;
 
-        for (int i = 0; i < length; i++) {
-            if ((length - i) >= mid) {
-                if (citations[i] >= mid) {
+        for (int i = 0; i < lengthOfCitations; i++) {
+            if ((lengthOfCitations - i) >= midCitations) {
+                if (citations[i] >= midCitations) {
                     return true;
                 }
             } else {
