@@ -2,7 +2,7 @@ class Solution {
     public int hIndex(int[] citations) {
 
         int minCitations = 1;
-        int maxCitations = citations[citations.length - 1];
+        int maxCitations = citations.length;
 
         int midCitations = (minCitations + maxCitations) / 2;
 
@@ -28,18 +28,35 @@ class Solution {
     public boolean isHIndex(int[] citations, int midCitations) {
 
         int lengthOfCitations = citations.length;
+        int low = 0;
+        int high = lengthOfCitations - 1;
 
-        for (int i = 0; i < lengthOfCitations; i++) {
-            if ((lengthOfCitations - i) >= midCitations) {
-                if (citations[i] >= midCitations) {
-                    return true;
-                }
+        int mid = (low + high) / 2;
+
+        int tempResult = lengthOfCitations;
+
+        while (low <= high) {
+            if (citations[mid] >= midCitations) {
+                tempResult = Math.min(tempResult, mid);
+
+                // if () {
+                //     return true;
+                // } else {
+                //     low = mid + 1;
+                // }
+                high = mid - 1;
             } else {
-                return false;
+                low = mid + 1;
             }
 
+            mid = (low + high) / 2;
         }
 
-        return false;
+        if((lengthOfCitations - tempResult) >= midCitations){
+            return true;
+        }else {
+            return false;
+        }
+
     }
 }
