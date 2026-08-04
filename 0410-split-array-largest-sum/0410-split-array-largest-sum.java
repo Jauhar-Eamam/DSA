@@ -1,13 +1,13 @@
 class Solution {
     public int splitArray(int[] nums, int k) {
 
-        int min = 0;
-        int max = 0;
+        int minValue = 0;
+        int maxValue = 0;
 
         int maxOutput = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
-            max += nums[i];
+            maxValue += nums[i];
 
             maxOutput = Math.max(maxOutput, nums[i]);
         }
@@ -16,38 +16,38 @@ class Solution {
             return maxOutput;
         }
 
-        int mid = (min + max) / 2;
+        int midValue = (minValue + maxValue) / 2;
 
-        int result = max;
+        int result = maxValue;
 
-        while (min <= max) {
-            if (isMin(nums, mid, k)) {
-                result = Math.min(result, mid);
-                max = mid - 1;
+        while (minValue <= maxValue) {
+            if (isMin(nums, midValue, k)) {
+                result = Math.min(result, midValue);
+                maxValue = midValue - 1;
             } else {
-                min = mid + 1;
+                minValue = midValue + 1;
             }
 
-            mid = (min + max) / 2;
+            midValue = (minValue + maxValue) / 2;
         }
 
         return result;
     }
 
-    public boolean isMin(int[] nums, int mid, int k) {
-        int curr = 0;
+    public boolean isMin(int[] nums, int midValue, int k) {
+        int currValue = 0;
         int totalParts = 1;
 
         for (int i = 0; i < nums.length ; i++) {
 
-            if ((curr + nums[i]) <= mid) {
-                curr += nums[i];
+            if ((currValue + nums[i]) <= midValue) {
+                currValue += nums[i];
             } else {
                 totalParts++;
-                if ((totalParts > k) || (nums[i] > mid)) {
+                if ((totalParts > k) || (nums[i] > midValue)) {
                     return false;
                 }
-                curr = nums[i];
+                currValue = nums[i];
             }
 
         }
