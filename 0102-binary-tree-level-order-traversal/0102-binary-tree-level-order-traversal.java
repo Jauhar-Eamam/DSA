@@ -17,14 +17,12 @@ class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> nodeList = new ArrayList<>();
 
-        ArrayList<Integer> currArr = new ArrayList<>();
-
-        fun(root, nodeList, currArr, 0);
+        fun(root, nodeList, 0);
 
         return nodeList;
     }
 
-    public static void fun(TreeNode root, List<List<Integer>> nodeList, ArrayList<Integer> currArr, int indx) {
+    public static void fun(TreeNode root, List<List<Integer>> nodeList, int indx) {
         if(root == null) {
             return;
         }
@@ -32,12 +30,12 @@ class Solution {
 
 
         if(nodeList.size() <= indx){
-            nodeList.add(new ArrayList(currArr));
+            nodeList.add(new ArrayList<>());
         }
 
-        fun(root.left, nodeList, currArr, indx+1);
+        fun(root.left, nodeList, indx+1);
         nodeList.get(indx).add(root.val);
-        fun(root.right, nodeList, currArr, indx+1);
+        fun(root.right, nodeList, indx+1);
         return;
     }
 }
