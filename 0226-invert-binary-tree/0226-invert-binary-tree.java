@@ -28,7 +28,7 @@ class Solution {
 
     public static void fun(TreeNode p, Queue<TreeNode> tempNode){
 
-        if(p == null || (p.left == null) && (p.right == null)) {
+        if(p == null ) {
             return;
         }
 
