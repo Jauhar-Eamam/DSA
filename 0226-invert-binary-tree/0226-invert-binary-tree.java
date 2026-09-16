@@ -19,15 +19,15 @@ class Solution {
         if(root == null) {
             return root;
         }
-        Queue<TreeNode> tempNode = new LinkedList<>();
+       
 
-        fun(root, tempNode);
+        fun(root);
 
         return root;
     }
 
-    public static void fun(TreeNode p, Queue<TreeNode> tempNode){
-
+    public static void fun(TreeNode p){
+ Queue<TreeNode> tempNode = new LinkedList<>();
         if(p == null ) {
             return;
         }
@@ -35,8 +35,8 @@ class Solution {
         tempNode.add(p.left);
         p.left = p.right;
         p.right = tempNode.poll();
-        fun(p.left, tempNode);
-        fun(p.right , tempNode);
+        fun(p.left);
+        fun(p.right );
 
         return;
     }
