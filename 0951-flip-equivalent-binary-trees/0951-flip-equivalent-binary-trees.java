@@ -20,31 +20,20 @@ class Solution {
 
     public static boolean fun(TreeNode root1, TreeNode root2) {
 
-        if(root1 == null && root2 == null) {
+        if (root1 == null && root2 == null) {
             return true;
         }
 
-        if((root1 == null && root2 != null) || (root1 != null && root2 == null)){
+        if ((root1 == null && root2 != null) || (root1 != null && root2 == null)) {
             return false;
         }
 
-        if(root1.val != root2.val) {
+        if (root1.val != root2.val) {
             return false;
         }
 
-        // if(!(fun(root1.left, root2.left))){
-        //     if(!(fun(root1.left, root2.right))){
-        //         return false;
-        //     }
-        // }
-
-        // if(!(fun(root1.right, root2.right))) {
-        //     if(!(fun(root1.right, root2.left))) {
-        //         return false;
-        //     }
-        // }
-
-        boolean result = ((fun(root1.left, root2.left) && fun(root1.right, root2.right)) || (fun(root1.left, root2.right) && fun(root1.right, root2.left)));
+        boolean result = ((fun(root1.left, root2.left) && fun(root1.right, root2.right))
+                || (fun(root1.left, root2.right) && fun(root1.right, root2.left)));
 
         return result;
     }
