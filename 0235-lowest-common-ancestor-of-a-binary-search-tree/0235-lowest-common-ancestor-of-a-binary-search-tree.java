@@ -32,7 +32,7 @@ class Solution {
            return fun(root.left, p, q);
         }else if(root.val < p.val && root.val < q.val) {
            return fun(root.right, p, q);
-        }else if((root.val > p.val && root.val < q.val) || (root.val > q.val && root.val < p.val)) {
+        }else  {
             ans = root;
         }
         return ans;
