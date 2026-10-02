@@ -25,10 +25,12 @@
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Jauhar-Eamam/DSA/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Jauhar-Eamam/DSA/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -41,5 +43,14 @@
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Jauhar-Eamam/DSA/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
+## Binary Lifting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+## Lowest Common Ancestor
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 <!---LeetCode Topics End-->
