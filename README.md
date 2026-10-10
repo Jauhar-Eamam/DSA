@@ -11,6 +11,7 @@
 | [0112-path-sum](https://github.com/Jauhar-Eamam/DSA/tree/main/0112-path-sum/) | Easy |
 | [0113-path-sum-ii](https://github.com/Jauhar-Eamam/DSA/tree/main/0113-path-sum-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/Jauhar-Eamam/DSA/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
+| [0572-subtree-of-another-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0572-subtree-of-another-tree/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -20,6 +21,7 @@
 | [0112-path-sum](https://github.com/Jauhar-Eamam/DSA/tree/main/0112-path-sum/) | Easy |
 | [0113-path-sum-ii](https://github.com/Jauhar-Eamam/DSA/tree/main/0113-path-sum-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/Jauhar-Eamam/DSA/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
+| [0572-subtree-of-another-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0572-subtree-of-another-tree/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -36,8 +38,17 @@
 | [0112-path-sum](https://github.com/Jauhar-Eamam/DSA/tree/main/0112-path-sum/) | Easy |
 | [0113-path-sum-ii](https://github.com/Jauhar-Eamam/DSA/tree/main/0113-path-sum-ii/) | Medium |
 | [0129-sum-root-to-leaf-numbers](https://github.com/Jauhar-Eamam/DSA/tree/main/0129-sum-root-to-leaf-numbers/) | Medium |
+| [0572-subtree-of-another-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0572-subtree-of-another-tree/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0113-path-sum-ii](https://github.com/Jauhar-Eamam/DSA/tree/main/0113-path-sum-ii/) | Medium |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0572-subtree-of-another-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0572-subtree-of-another-tree/) | Easy |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0572-subtree-of-another-tree](https://github.com/Jauhar-Eamam/DSA/tree/main/0572-subtree-of-another-tree/) | Easy |
 <!---LeetCode Topics End-->
